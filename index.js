@@ -8,7 +8,7 @@ const helmet = require('helmet');
 app.use(helmet());
 
 // Static Content
-app.use(express.static('public'));
+app.use("/*", express.static('public'));
 
 // 404
 app.use((req, res, next) => {
